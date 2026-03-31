@@ -37,7 +37,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     var radius = e.accuracy;
 
     L.marker(e.latlng).addTo(map)
-        .bindPopup("Estas a menos de " + radius + " metros de este punto").openPopup();
+        .bindPopup("Estas a menos de " + radius + " metros de este punto.").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
 }
